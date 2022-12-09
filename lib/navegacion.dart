@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/paginas/pagina02.dart';
+import 'package:test5/pagina02.dart';
+// ignore: depend_on_referenced_packages
+//import 'package:flutter_application_1/paginas/pagina02.dart';
 
 // ignore: prefer_const_constructors
 void main() => runApp(MiApp());
@@ -30,15 +32,15 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("navegacion"),
+        title: Text("Navegacion"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Navegacion pag"),
+            Text("Navegacion entre paginas "),
             ElevatedButton(
-              child: Text(" vamos  la otra pag mario "),
+              child: Text(" vamos a la otra pag mario "),
               onPressed: () => {
                 //print("presionaste el boton")
                 Navigator.push(context,
